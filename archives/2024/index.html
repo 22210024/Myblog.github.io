@@ -9,7 +9,7 @@
     
     <title>
         
-            Deca joins |
+            归档: 2024 |
         
         Jia&#39;s Blog
     </title>
@@ -432,281 +432,84 @@ $logo-image-box-width = 46px
 
                 
                     <div class="fade-in-down-animation">
-    <div class="post-page-container">
-        <div class="article-content-container">
+    <div class="archive-container ">
+        $archive-year-font-size = 1.8rem
+$archive-year-count-font-size = 1.2rem
+$article-title-font-size = 1.2rem
+$article-date-font-size = 1rem
 
-            <div class="article-title">
-                <span class="title-hover-animation">Deca joins</span>
-            </div>
+.archive-list-container {
 
-            
-                <div class="article-header">
-                    <div class="avatar">
-                        <img src="/images/avatar.png">
-                    </div>
-                    <div class="info">
-                        <div class="author">
-                            <span class="name">Jia</span>
-                            
-                        </div>
-                        <div class="meta-info">
-                            .article-meta-info {
-  font-size 0.8rem
-
-  .article-meta-item {
-    margin-right 0.6rem
-    color var(--text-color-4)
+  .archive-item {
+    margin-bottom $component-spacing-value
 
     &:last-child {
-      margin-right 0
-    }
-  }
-
-  .article-date {
-
-    .mobile {
-      display none
+      margin-bottom 0
     }
 
-    +keep-tablet() {
-      .pc {
-        display none
+    .archive-item-header {
+      margin-bottom 0.8rem
+
+      .archive-year {
+        margin-right 6px
+        color var(--text-color-2)
+        font-weight 600
+        font-size $archive-year-font-size
+
+        +keep-tablet() {
+          font-size $archive-year-font-size - 0.2rem
+        }
       }
 
-      .mobile {
-        display inline
+
+      .archive-year-post-count {
+        color var(--text-color-2)
+        font-weight 500
+        font-size $archive-year-count-font-size
+
+        +keep-tablet() {
+          font-size $archive-year-count-font-size * 0.9
+        }
       }
     }
-  }
 
 
-  .article-update-date {
-    +keep-tablet() {
-      display none
-    }
-  }
+    .article-list {
 
-  .article-tags
-  .article-categories {
-    display inline
+      padding-left 0.8rem
 
-    ul
-    li {
-      display inline
-    }
-
-    a {
-      color var(--text-color-4)
-
-      &:hover {
-        color var(--primary-color)
-      }
-    }
-  }
-
-  .article-tags {
-    +keep-tablet() {
-      display none
-    }
-  }
-
-  .article-min2read
-  .article-wordcount {
-    +keep-mobile() {
-      display none
-    }
-  }
-}
-
-                        </div>
-                    </div>
-                </div>
-            
-
-            <div class="article-content keep-markdown-body">
-                
-
-                <img lazyload alt="image" data-src="/2023/06/21/Deca-joins/deca-230620.jpg" class title="Deca joins">
-
-<p>罚站两小时没听到大雨</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1907710034&auto=1&height=66"></iframe>
-
-            </div>
-
-            
-
-            
-
-            
-                <div class="article-nav">
-                    
-                        <div class="article-prev">
-                            <a class="prev"
-                               rel="prev"
-                               href="/2023/06/24/%E2%80%9C1%E2%80%9D/"
-                            >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                                <span class="title flex-center">
-                                <span class="post-nav-title-item">idk</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                            </a>
-                        </div>
-                    
-                    
-                        <div class="article-next">
-                            <a class="next"
-                               rel="next"
-                               href="/2023/06/19/20230619/"
-                            >
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">Record</span>
-                                <span class="post-nav-item">下一篇</span>
-                            </span>
-                                <span class="right arrow-icon flex-center">
-                              <i class="fas fa-chevron-right"></i>
-                            </span>
-                            </a>
-                        </div>
-                    
-                </div>
-            
-
-            
-                <div class="comment-container">
-                    if (hexo-config('comment.enable') == true && hexo-config('comment.use') != "") {
-  if (hexo-config('comment.use') == "valine") {
-    @import "./valine.styl"
-  }
-  else if (hexo-config('comment.use') == "gitalk") {
-    @import "./gitalk.styl"
-  }
-  else if (hexo-config('comment.use') == "twikoo") {
-    @import "./twikoo.styl"
-  }
-  else if (hexo-config('comment.use') == "waline") {
-    @import "./waline.styl"
-  }
-}
-
-.comments-container {
-  display inline-block
-  width 100%
-  margin-top $component-spacing-value
-
-  #comments-anchor {
-    width 100%
-    height 0.8rem
-  }
-
-  .comment-area-title {
-    width 100%
-    margin 0.8rem 0
-    color var(--text-color-3)
-    font-size 1.38rem
-
-    i {
-      color var(--text-color-3)
-    }
-
-    +keep-tablet() {
-      margin 0.4rem 0
-      font-size 1.2rem
-    }
-  }
-}
-
-                </div>
-            
-        </div>
-
-        
-            <div class="toc-content-container">
-                .post-toc-wrap {
-  position relative
-  box-sizing border-box
-  width 100%
-  height 100%
-  overflow-y auto
-  font-size 0.92rem
-
-  &::-webkit-scrollbar-thumb {
-    background var(--toc-scrollbar-color)
-    border-radius 0.3rem
-  }
-
-  &::-webkit-scrollbar-track {
-    background transparent
-  }
-
-  .post-toc {
-
-    ol {
-      margin 0
-      padding 0 0.1rem 0.8rem 0.6rem
-      text-align left
-      list-style none
-
-      &:last-child {
-        padding-bottom 0
-      }
-
-      > ol {
+      +keep-tablet() {
         padding-left 0
       }
 
-      a {
-        transition-property all
-        transition()
-      }
-    }
+      .article-item {
+        margin-top 1.2rem
+        font-size 1rem
 
-
-    .nav-item {
-      margin-bottom 0.2rem
-      overflow hidden
-      line-height 1.8
-      white-space nowrap
-      text-overflow ellipsis
-    }
-
-
-    .nav {
-      .nav-child {
-        display hexo-config('toc.expand_all') ? block:none
-      }
-
-      .active > .nav-child {
-        display block
-      }
-
-      .active-current > .nav-child {
-        display block
-
-        > .nav-item {
-          display block
+        +keep-tablet() {
+          margin-top 1.1rem
         }
-      }
 
-
-      .nav-number
-      .nav-text {
-        color var(--toc-text-color)
-      }
-
-      .active > a {
-        .nav-number
-        .nav-text {
-          color var(--primary-color)
+        +keep-mobile() {
+          margin-top 1rem
         }
-      }
 
-      .active-current > a {
-        .nav-number
-        .nav-text {
-          color var(--primary-color)
+        &:hover {
+          a.article-title
+          .article-date {
+            color var(--primary-color)
+          }
+        }
+
+
+        a.article-title {
+          color var(--text-color-3)
+        }
+
+        .article-date {
+          float right
+          color var(--text-color-3)
+          font-size $article-date-font-size
         }
       }
     }
@@ -714,11 +517,9 @@ $logo-image-box-width = 46px
 }
 
 
-            </div>
-        
+
     </div>
 </div>
-
 
                 
             </div>
@@ -775,87 +576,6 @@ $logo-image-box-width = 46px
         </div>
     </div>
 
-    
-        <div class="post-tools">
-            $li-border-radius = 0.4rem
-$li-margin-bottom = 0.8rem
-
-.post-tools-container {
-  position relative
-  box-sizing border-box
-  padding-top 2rem
-
-  .tools-list {
-
-    li {
-      position relative
-      box-sizing border-box
-      width $post-tool-button-width
-      height $post-tool-button-width
-      margin-bottom $li-margin-bottom
-      color var(--text-color-3)
-      font-size 1.2rem
-      background var(--background-color-1)
-      border-radius 50%
-      cursor pointer
-
-      i {
-        color var(--text-color-3)
-      }
-
-      &:hover {
-        color var(--background-color-1)
-        background var(--primary-color)
-
-        i {
-          color var(--background-color-1)
-        }
-      }
-
-
-      &:last-child {
-        margin-bottom 0
-      }
-
-
-      hover-style(true, 1.06, 1.06)
-
-      &.toggle-show-toc {
-        display none
-
-        +keep-tablet() {
-          display none !important
-        }
-      }
-
-
-      &.go-to-comments {
-        .post-comments-count {
-          position absolute
-          top 0
-          right -1rem
-          display none
-          align-items center
-          justify-content center
-          box-sizing border-box
-          min-width 1.1rem
-          height 1.1rem
-          padding 0 0.2rem
-          color var(--badge-color)
-          font-size 12px
-          background var(--badge-background-color)
-          border-radius 0.4rem
-
-          +keep-tablet() {
-            display none !important
-          }
-        }
-      }
-    }
-  }
-}
-
-        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -1207,20 +927,6 @@ $search-header-height = 3rem
 
 
 <div class="post-scripts pjax">
-    
-        
-<script src="/js/post-helper.js"></script>
-
-        
-            
-<script src="/js/libs/anime.min.js"></script>
-
-        
-        
-            
-<script src="/js/toc.js"></script>
-
-        
     
 </div>
 
